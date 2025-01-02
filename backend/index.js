@@ -8,7 +8,7 @@ const userRoutes = require('./routes/userRoutes');
 const messageRoutes = require('./routes/messageRoutes');
 const cookieParser = require('cookie-parser');
 
-const path = require('path')
+const path = require('path');
 
 connectDB();
 const PORT = process.env.PORT || 5000;
@@ -23,7 +23,7 @@ app.use(cors({
 app.use(express.json());
 app.use(cookieParser());
 
-// -------Routers------
+// -------Routes------
 
 app.use('/api/v1/user', userRoutes);
 app.use('/api/v1/message', messageRoutes);

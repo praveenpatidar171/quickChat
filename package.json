@@ -4,9 +4,9 @@
   "description": "Its a chating app",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon backend/index.js",
+    "dev": "nodemon backend/index.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "dev": "nodemon index.js"
+    "start": "nodemon backend/index.js"
   },
   "author": "Praveen Patidar",
   "license": "ISC",
